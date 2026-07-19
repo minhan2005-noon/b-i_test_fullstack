@@ -145,7 +145,7 @@ Trang cần cảm giác editorial và trustworthy, nên mình chọn sans-serif 
 
 Cảm hứng chính đến từ TechRadar, Tom's Guide và Security.org vì các trang này kết hợp tốt giữa editorial trust, comparison density và CTA phục vụ conversion.
 
-### Nếu có thêm thời gian, mình sẽ cải thiện gì?
+### cải thiện ?
 
 - Thêm affiliate disclosure và bằng chứng testing thực tế.
 - Thêm bộ lọc theo use case như streaming, gaming, travel và privacy.
