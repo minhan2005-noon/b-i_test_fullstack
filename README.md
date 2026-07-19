@@ -1,111 +1,111 @@
 # Top VPN Services 2026
 
-Homepage concept for a global VPN comparison website. All website copy is in English, focused on clarity, trust and conversion.
+Đây là concept homepage cho website so sánh VPN dành cho thị trường global. Toàn bộ nội dung hiển thị trên website được viết bằng tiếng Anh theo đúng yêu cầu đề bài. README này dùng tiếng Việt để trình bày phần research, design system, quyết định thiết kế và tư duy triển khai.
 
 ## 1. UI Research
 
-### References
+### Nguồn tham khảo
 
 1. TechRadar - Best VPN Service 2026  
    URL: https://www.techradar.com/vpn/best-vpn
 
-   Strengths:
-   - Clear editorial ranking structure with a fast "best overall" answer before deeper reading.
-   - Provider cards combine price, short verdicts, pros and CTA links.
-   - Strong hierarchy: ranking number, provider name, verdict and CTA are visually separated.
+   Điểm mạnh:
+   - Cấu trúc ranking rõ ràng, có câu trả lời nhanh cho lựa chọn "best overall" trước khi người dùng đọc sâu.
+   - Card của từng nhà cung cấp kết hợp được giá, nhận xét ngắn, ưu điểm và CTA.
+   - Visual hierarchy tốt: số thứ hạng, tên provider, verdict và CTA được tách rõ.
 
-   What I applied:
-   - I added a "Best overall" section before the full ranking so users can make a quick decision.
-   - Each provider card includes score, price, strengths and a CTA in the same visual unit.
+   Điểm học được và áp dụng:
+   - Mình đặt section "Best overall" trước danh sách đầy đủ để người dùng có thể ra quyết định nhanh.
+   - Mỗi provider card đều có score, price, strengths và CTA trong cùng một khối nội dung.
 
 2. Tom's Guide - Best VPN in 2026  
    URL: https://www.tomsguide.com/best-picks/best-vpn
 
-   Strengths:
-   - Uses practical comparison data such as speed, server locations, device limits and refund terms.
-   - The page supports both quick scanning and deeper reading.
-   - CTA placement is close to buying criteria, which helps high-intent visitors.
+   Điểm mạnh:
+   - Dùng các thông tin thực tế như tốc độ, server locations, giới hạn thiết bị và refund terms.
+   - Trang hỗ trợ cả hành vi scan nhanh và đọc chi tiết.
+   - CTA được đặt gần các tiêu chí mua hàng, phù hợp với nhóm user có intent cao.
 
-   What I applied:
-   - The comparison table uses decision-focused columns: best for, score, speed, devices and price.
-   - CTA buttons are repeated beside decision data instead of only appearing at the top of the page.
+   Điểm học được và áp dụng:
+   - Bảng comparison trong thiết kế của mình dùng các cột ra quyết định: best for, score, speed, devices và price.
+   - CTA được lặp lại gần dữ liệu quan trọng thay vì chỉ đặt ở đầu trang.
 
 3. Security.org - VPN Provider Comparison  
    URL: https://www.security.org/vpn/compare/
 
-   Strengths:
-   - Focuses on practical criteria and explains how users should compare VPN providers.
-   - The article feels trust-oriented because it discusses testing and user needs, not only deals.
-   - The layout supports educational content alongside provider comparison.
+   Điểm mạnh:
+   - Tập trung vào tiêu chí thực tế và giải thích cách người dùng nên so sánh VPN.
+   - Nội dung tạo cảm giác tin cậy vì nói về testing, nhu cầu người dùng và tiêu chí đánh giá, không chỉ tập trung vào deal.
+   - Layout kết hợp tốt giữa nội dung giáo dục và bảng so sánh provider.
 
-   What I applied:
-   - I included a methodology section with weighted criteria.
-   - I added buyer questions to reduce uncertainty before users click a CTA.
+   Điểm học được và áp dụng:
+   - Mình thêm section methodology với các tiêu chí có trọng số.
+   - Mình thêm FAQ/buyer questions để giảm băn khoăn trước khi người dùng click CTA.
 
 ## 2. Design System
 
-### Colors
+### Màu sắc
 
-- Ink: `#10202f` for high-contrast text.
-- Primary: `#0b4f6c` for trust, security and main CTAs.
-- Accent: `#14b8a6` for positive status, privacy and secondary highlights.
-- Warning: `#f5a524` for the winner/ranking accent.
-- Background: `#f6f8fb` with white surfaces for a clean editorial feel.
+- Ink: `#10202f` dùng cho text chính, đảm bảo độ tương phản tốt.
+- Primary: `#0b4f6c` dùng cho cảm giác tin cậy, bảo mật và CTA chính.
+- Accent: `#14b8a6` dùng cho trạng thái tích cực, privacy và highlight phụ.
+- Warning: `#f5a524` dùng làm điểm nhấn cho top ranking/winner.
+- Background: `#f6f8fb` kết hợp surface trắng để tạo cảm giác sạch, editorial và dễ đọc.
 
-Reasoning: VPN users care about privacy and reliability, so the main palette uses blue-green security colors. Amber is used sparingly to draw attention to the top-ranked offer without making the page feel aggressive.
+Lý do chọn: Người dùng VPN quan tâm nhiều đến privacy và reliability, nên palette chính dùng nhóm xanh lam - xanh teal để gợi cảm giác bảo mật. Màu amber chỉ dùng tiết chế ở các điểm ranking để kéo sự chú ý vào lựa chọn tốt nhất mà không làm trang quá "salesy".
 
 ### Typography
 
-- Heading: Geist Sans, bold weights, tight but readable line-height.
-- Body: Geist Sans, regular/medium weights, 16-18px for comfortable reading.
-- Hierarchy: large hero headline, medium section headings, compact card headings and table labels.
+- Heading: Geist Sans, weight đậm, line-height chặt nhưng vẫn dễ đọc.
+- Body: Geist Sans, regular/medium, kích thước 16-18px để đọc thoải mái.
+- Hierarchy: hero headline lớn, section heading vừa phải, card heading và table label gọn hơn.
 
-Reasoning: A comparison page needs fast scanning. Large headings create confidence, while compact table/card text keeps the product information dense and practical.
+Lý do chọn: Trang comparison cần người dùng scan nhanh. Heading lớn giúp tạo sự tự tin và nhấn mạnh chủ đề, trong khi text trong card/table được giữ gọn để thông tin có mật độ tốt.
 
 ### Spacing
 
-- 8px spacing system.
-- Small gaps: 8-16px.
-- Card padding: 18-24px.
-- Section spacing: 72-104px depending on viewport.
+- Sử dụng hệ spacing 8px.
+- Gap nhỏ: 8-16px.
+- Padding card: 18-24px.
+- Spacing giữa section: 72-104px tùy viewport.
 
-Reasoning: The 8px system keeps cards, buttons and table spacing consistent across desktop and mobile.
+Lý do chọn: Hệ 8px giúp khoảng cách giữa button, card, table và section nhất quán trên desktop lẫn mobile.
 
-### Components
+### Component Style
 
-- Buttons: 8px radius, 44px minimum height, strong filled primary CTA and outlined secondary CTA.
-- Cards: 8px radius, subtle border, light shadow, clear rank badge.
-- Table: dense desktop comparison with horizontal scroll on mobile.
-- Pills: small rounded labels for strengths and trust signals.
+- Button: radius 8px, chiều cao tối thiểu 44px, primary CTA dạng filled, secondary CTA dạng outlined.
+- Card: radius 8px, border nhẹ, shadow nhẹ, rank badge rõ.
+- Table: bố cục dày thông tin ở desktop, mobile dùng horizontal scroll để giữ dữ liệu dễ đọc.
+- Pill: label nhỏ cho strengths và trust signals.
 
-## 3. Homepage Structure
+## 3. Cấu trúc Homepage
 
 1. Sticky header  
-   Gives direct access to Rankings, Compare and Method sections.
+   Giúp người dùng truy cập nhanh các phần Rankings, Compare và Method.
 
 2. Hero  
-   States the page purpose immediately and places "Compare VPNs" as the primary CTA. The generated dashboard visual supports the VPN/global/security topic without relying on real brand logos.
+   Nêu rõ mục đích trang ngay từ đầu và đặt "Compare VPNs" làm CTA chính. Visual dashboard được generate riêng để hỗ trợ chủ đề VPN/global/security mà không dùng logo thật của thương hiệu.
 
 3. Best overall recommendation  
-   Placed before the full list because users searching for "best VPN" often want a fast answer.
+   Đặt trước full list vì người dùng tìm "best VPN" thường muốn có câu trả lời nhanh trước khi đọc bảng so sánh dài hơn.
 
 4. Provider ranking cards  
-   Designed for scanning. Each card shows rank, best-use label, score, price, strengths and CTA.
+   Thiết kế để scan nhanh. Mỗi card có rank, best-use label, score, price, strengths và CTA.
 
 5. Comparison table  
-   Supports more rational decision-making once the user wants details.
+   Hỗ trợ người dùng ra quyết định lý tính hơn khi muốn so sánh chi tiết.
 
 6. Methodology  
-   Adds trust by explaining how the ranking is weighted.
+   Tăng trust bằng cách giải thích ranking được chấm theo tiêu chí nào.
 
-7. Research applied and FAQ  
-   Shows design thinking and reduces final-click hesitation.
+7. Research applied và FAQ  
+   Thể hiện tư duy thiết kế và giảm do dự trước bước click cuối.
 
-## 4. Dev Thinking
+## 4. Tư duy triển khai
 
-### Section and Component Breakdown
+### Chia section/component
 
-If implemented in React or Next.js, I would split the page into:
+Nếu triển khai bằng React hoặc Next.js, mình sẽ chia thành các component:
 
 - `Header`
 - `Hero`
@@ -119,42 +119,42 @@ If implemented in React or Next.js, I would split the page into:
 - `FAQ`
 - `Footer`
 
-The provider data should live in a structured array so ranking cards and comparison table can reuse the same source.
+Dữ liệu provider nên được lưu trong một structured array để ranking cards và comparison table có thể dùng chung một nguồn dữ liệu, tránh nhập trùng và dễ cập nhật.
 
-### Responsive Handling
+### Responsive
 
-- Desktop: hero uses two columns, provider cards use five compact columns, comparison table is full width.
-- Tablet: hero becomes one column and provider cards become two columns.
-- Mobile: all cards stack into one column, header wraps, and the comparison table scrolls horizontally to preserve readable data.
+- Desktop: hero dùng 2 cột, provider cards dùng 5 cột compact, comparison table full width.
+- Tablet: hero chuyển thành 1 cột, provider cards chuyển thành 2 cột.
+- Mobile: cards xếp 1 cột, header wrap, comparison table dùng horizontal scroll để giữ nội dung dễ đọc.
 
-### Implementation Difficulty
+### Phần khó implement
 
-The hardest part is the comparison table on mobile. Instead of squeezing every column into unreadable text, I used horizontal scrolling. A production version could also transform each row into a mobile card, but that would require extra component logic and QA.
+Phần khó nhất là comparison table trên mobile. Nếu ép tất cả cột vào màn hình nhỏ thì text sẽ khó đọc, nên mình chọn horizontal scroll. Trong phiên bản production, có thể cải thiện thêm bằng cách chuyển mỗi row thành mobile card, nhưng hướng đó cần thêm logic component và QA responsive kỹ hơn.
 
-## 5. Design Explanation
+## 5. Giải thích quyết định thiết kế
 
-### Why this color palette?
+### Vì sao chọn bảng màu này?
 
-Blue-green tones create a security and technology feeling without looking too cold. The amber accent is only used for ranking emphasis so the user notices the top recommendation quickly.
+Nhóm màu xanh lam - teal tạo cảm giác bảo mật, công nghệ và đáng tin mà không quá lạnh. Màu amber chỉ dùng cho ranking emphasis để người dùng nhận ra top recommendation nhanh hơn.
 
-### Why this typography?
+### Vì sao chọn typography này?
 
-The page needs to feel editorial and trustworthy, so I used a clean sans-serif with strong heading weights and readable body text. The typography supports scanning because users compare VPNs by quickly moving between scores, prices and labels.
+Trang cần cảm giác editorial và trustworthy, nên mình chọn sans-serif sạch, heading weight mạnh và body text dễ đọc. Typography cũng hỗ trợ hành vi scan vì người dùng so sánh VPN bằng cách di chuyển nhanh giữa score, price và label.
 
-### Design inspiration
+### Lấy cảm hứng từ đâu?
 
-The main inspiration came from TechRadar, Tom's Guide and Security.org because they combine editorial trust, comparison density and conversion-focused CTAs.
+Cảm hứng chính đến từ TechRadar, Tom's Guide và Security.org vì các trang này kết hợp tốt giữa editorial trust, comparison density và CTA phục vụ conversion.
 
-### What I would improve with more time
+### Nếu có thêm thời gian, mình sẽ cải thiện gì?
 
-- Add real affiliate disclosure and testing evidence.
-- Add filters for use cases such as streaming, gaming, travel and privacy.
-- Add provider logo assets with proper usage permission.
-- Create a Figma prototype with mobile interactions and table-to-card behavior.
+- Thêm affiliate disclosure và bằng chứng testing thực tế.
+- Thêm bộ lọc theo use case như streaming, gaming, travel và privacy.
+- Thêm logo provider nếu có quyền sử dụng asset hợp lệ.
+- Làm thêm Figma prototype cho mobile interaction và table-to-card behavior.
 
 ## Deliverables
 
-- Working homepage: `app/page.tsx`
-- Design system and responsive styling: `app/globals.css`
-- Generated hero visual: `public/vpn-dashboard-hero.png`
-- Research and explanation: this README
+- Homepage chạy được: `app/page.tsx`
+- Design system và responsive styling: `app/globals.css`
+- Hero visual được generate riêng: `public/vpn-dashboard-hero.png`
+- Research và giải thích thiết kế: README này
