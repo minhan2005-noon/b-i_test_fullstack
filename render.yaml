@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: top-vpn-2026-minhan
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.0
